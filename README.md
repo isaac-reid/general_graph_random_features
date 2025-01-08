@@ -7,6 +7,10 @@ General graph random features (GRFs) can use random walks to construct sparse Mo
 This lightweight repo reproduces Fig. 2 of the paper, which shows the kernel approximation quality against the number of random walkers.
 We consider a range of kernels on a range of real and synthetic graphs. Naturally, as the number of samples grow the approximation error drops. The estimator is unbiased.[^1]
 
+<div align="center">
+  <img src="/grfs_schematic.png" alt="Alt text" width="800">
+</div>
+
 **Installation instructions.** 
 The requirements of the repo are minimal.
 For a quick installation, run:
@@ -14,7 +18,7 @@ For a quick installation, run:
 ```bash
 conda env create -f environment.yml --name new_environment_name
 ```
-but in practice one only needs numpy, matplotlib, scipy and ipykernel.
+in the downloaded repo in terminal. But in practice one only needs numpy, matplotlib, scipy and ipykernel.
 
 **Significance and extensions.**
 Brute force methods typically incur cubic time complexity in the number of graph nodes, whereas GRFs are linear. 
